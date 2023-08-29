@@ -1,0 +1,49 @@
+.container-scroll-contact {
+  height: 80px;
+  padding-top: 40px;
+  overflow-x: scroll;
+}
+
+.contact {
+  white-space: nowrap;
+  width: auto;
+
+  .card {
+    display: inline-flex;
+    width: 1024px;
+  }
+
+  &__carousel {
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #151514;
+      height: 1rem;
+      width: 57.5rem;
+      background-repeat: no-repeat;
+      top: -10px;
+      left: -18em;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/sparkler-border.svg);
+      height: 80px;
+      width: 80px;
+      background-repeat: no-repeat;
+      top: -33px;
+      left: 11.5em;
+    }
+
+    &--info {
+      font-size: 0.5em;
+      font-family: "Monumental", sans-serif;
+      margin-bottom: -2em;
+      margin-top: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,382 @@
+.webgl {
+  z-index: -1;
+}
+
+.p5Canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.linkedin {
+  background-image: url(../images/icons/linkedin.png);
+  height: 4em;
+  width: 4em;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+}
+
+.github {
+  background-image: url(../images/icons/github.png);
+  height: 4em;
+  width: 4em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.container-scroll {
+  height: 550px;
+  overflow-x: scroll;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .card {
+  padding: 1em;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+}
+
+.contact .card .links {
+  display: flex;
+  list-style: none;
+  width: 8em;
+  justify-content: space-around;
+}
+
+.contact .card ul li {
+  font-size: 0.7em;
+}
+.contact .card a {
+  font-size: 0.7em;
+}
+
+.contact-title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-border.svg);
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  top: 5em;
+  left: 15em;
+}
+
+.frame {
+  padding: 50px;
+  border: 1px solid;
+  position: relative;
+}
+.frame h4 {
+  -webkit-text-stroke: 1px #151514;
+  color: transparent;
+  font-size: 1em;
+  font-family: "Monumental", sans-serif;
+}
+.frame::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-black.svg);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  top: -26px;
+  left: -23px;
+}
+.frame::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-black.svg);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  bottom: -26px;
+  right: -28px;
+}
+
+@font-face {
+  font-family: "Monumental";
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+h2 {
+  font-size: 1em;
+  justify-content: center;
+  display: flex;
+  font-family: "Notable", sans-serif;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.work-experience {
+  white-space: nowrap;
+  width: auto;
+}
+
+.work-experience .card {
+  display: inline-flex;
+  width: 1024px;
+}
+.work-experience .container-empty {
+  width: 50%;
+}
+.work-experience__carousel {
+  width: 50%;
+  position: relative;
+}
+.work-experience__carousel::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #151514;
+  height: 1rem;
+  width: 57rem;
+  background-repeat: no-repeat;
+  bottom: -1.3em;
+  left: -18em;
+}
+.work-experience__carousel::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-border.svg);
+  height: 80px;
+  width: 85px;
+  background-repeat: no-repeat;
+  bottom: -2.5em;
+  right: 2.2em;
+}
+.work-experience__carousel--title {
+  font-size: 0.8em;
+  font-family: "Monumental", sans-serif;
+}
+.work-experience__carousel--company {
+  -webkit-text-stroke: 1px #151514;
+  color: transparent;
+  font-size: 0.6em;
+  font-family: "Monumental", sans-serif;
+}
+.work-experience__carousel--description {
+  font-size: 0.6em;
+  padding-bottom: 1em;
+}
+.work-experience__carousel--subtitle {
+  font-size: 0.7em;
+}
+.work-experience__carousel--list {
+  padding-bottom: 1em;
+}
+.work-experience__carousel--list li {
+  font-size: 0.6em;
+}
+.work-experience__carousel--date {
+  font-size: 0.5em;
+  font-family: "Monumental", sans-serif;
+  margin-bottom: -2em;
+  margin-top: 1.5em;
+}
+
+.about {
+  width: 50%;
+  position: relative;
+}
+.about__title {
+  font-size: 1em;
+  font-family: "Notable", sans-serif;
+  margin-left: 60px;
+  align-items: center;
+  display: flex;
+  margin: 0 0 50px 100px;
+}
+.about__title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-black.svg);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.about__text {
+  font-size: 0.7em;
+}
+
+.section.hero {
+  justify-content: center;
+  z-index: 1;
+}
+.section.hero div {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.section.hero div::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-black.svg);
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  top: -80px;
+  left: calc(50% - 30px);
+}
+.section.hero div::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-black.svg);
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  bottom: -1em;
+  left: calc(50% - 40px);
+}
+.section.hero div h2 {
+  font-weight: 900;
+}
+
+body {
+  font-size: 2em;
+  width: 100%;
+  background-image: url(../images/icons/noise.svg),
+    linear-gradient(70deg, #bd3a60, #fcdcc7, #bababa);
+  background-repeat: repeat;
+  animation: gradient-animation 1s ease infinite;
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+/* FCF3EA */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: #000;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin: 3em 0 3em 0;
+  position: relative;
+  color: #ffeded;
+  min-height: 70vh;
+  z-index: 9;
+}
+
+.block {
+  display: block;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 1em;
+  align-items: center;
+}
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav_links li {
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.nav_links li a {
+  text-decoration: none;
+}
+
+/* Media query mobile */
+
+@media only screen and (max-width: 600px) {
+  .frame {
+    padding: 0.5em;
+  }
+  .p5Canvas {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .container {
+    padding: 0 1.5em 0 1.5em;
+  }
+  .contact {
+    display: block;
+  }
+  .contact-title::after {
+    top: 2em;
+    left: 3em;
+  }
+  .about {
+    width: 100%;
+  }
+  .work-experience .container-empty {
+    display: none;
+  }
+  .container-scroll {
+    height: auto;
+    overflow-x: unset;
+  }
+  .work-experience {
+    white-space: unset;
+  }
+  .work-experience__carousel {
+    width: 100%;
+    position: relative;
+  }
+  .work-experience .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .work-experience__carousel::before {
+    left: -21em;
+  }
+  .work-experience__carousel::after {
+    right: -0.8em;
+  }
+  .contact .card {
+    padding: 1em 0;
+    justify-content: center;
+    font-size: 0.9em;
+    border: unset;
+  }
+  .contact .card ul {
+    list-style: none;
+  }
+  .section {
+    min-height: 60vh;
+  }
+}

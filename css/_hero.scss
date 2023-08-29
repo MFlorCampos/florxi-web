@@ -1,0 +1,36 @@
+.section.hero {
+  justify-content: center;
+  z-index: 1;
+
+  div {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/sparkler-black.svg);
+      height: 60px;
+      width: 60px;
+      background-repeat: no-repeat;
+      top: -80px;
+      left: calc(50% - 30px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/sparkler-black.svg);
+      height: 80px;
+      width: 80px;
+      background-repeat: no-repeat;
+      bottom: -2em;
+      left: calc(50% - 40px);
+    }
+
+    h2 {
+      font-weight: 900;
+    }
+  }
+}

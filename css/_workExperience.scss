@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Monumental";
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+.container-scroll {
+  height: 400px;
+  overflow-x: scroll;
+}
+
+h2 {
+  font-size: 1em;
+  justify-content: center;
+  display: flex;
+  font-family: "Notable", sans-serif;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.work-experience {
+  white-space: nowrap;
+  width: auto;
+
+  .card {
+    display: inline-flex;
+    width: 1024px;
+  }
+
+  .container-empty {
+    width: 50%;
+  }
+
+  &__carousel {
+    width: 50%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #151514;
+      height: 1rem;
+      width: 57rem;
+      background-repeat: no-repeat;
+      bottom: -1.3em;
+      left: -18em;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/sparkler-border.svg);
+      height: 80px;
+      width: 85px;
+      background-repeat: no-repeat;
+      bottom: -2.5em;
+      right: 2.2em;
+    }
+
+    &--title {
+      font-size: 0.7em;
+      font-family: "Monumental", sans-serif;
+    }
+
+    &--company {
+      -webkit-text-stroke: 1px #151514;
+      color: transparent;
+      font-size: 0.6em;
+      font-family: "Monumental", sans-serif;
+    }
+
+    &--description {
+      font-size: 0.5em;
+      padding-bottom: 1em;
+    }
+
+    &--subtitle {
+      font-size: 0.4em;
+    }
+
+    &--list {
+      padding-bottom: 1em;
+
+      & li {
+        font-size: 0.4em;
+      }
+    }
+
+    &--date {
+      font-size: 0.5em;
+      font-family: "Monumental", sans-serif;
+      margin-bottom: -2em;
+      margin-top: 1.5em;
+    }
+  }
+}

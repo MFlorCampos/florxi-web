@@ -1,0 +1,43 @@
+body {
+  font-size: 2em;
+}
+body {
+  width: 100%;
+  background-image: url(../images/icons/noise.svg);
+  background-repeat: repeat;
+}
+
+html {
+  background: #151514;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: #151514;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: #151514;
+}
+
+.block {
+  display: block;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

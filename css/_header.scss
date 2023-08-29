@@ -1,0 +1,19 @@
+.nav {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: end;
+    height: 1em;
+    align-items: center;
+
+    &_links {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+
+        & li {
+            font-size: 0.8em;
+            list-style: none;
+        }
+    }
+}

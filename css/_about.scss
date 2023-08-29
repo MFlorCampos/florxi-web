@@ -1,0 +1,38 @@
+.about {
+  width: 50%;
+  position: relative;
+
+  // &::after {
+  //     content: "";
+  //     position: absolute;
+  //     background-image: url(../images/icons/sparkler-white.svg);
+  //     height: 20rem;
+  //     width: 20rem;
+  //     background-repeat: no-repeat;
+  //     right: -80%;
+  //     top: 15%;
+  // }
+
+  &__title {
+    font-size: 1em;
+    font-family: "Notable", sans-serif;
+    margin-left: 60px;
+    align-items: center;
+    display: flex;
+    margin: 0 0 50px 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/sparkler-black.svg);
+      height: 50px;
+      width: 50px;
+      background-repeat: no-repeat;
+      left: 0;
+    }
+  }
+
+  &__text {
+    font-size: 0.5em;
+  }
+}
