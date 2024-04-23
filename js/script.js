@@ -122,48 +122,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//Horizontal scroll
-
-const postScroll = document.querySelector("div.container-scroll");
-
-postScroll.addEventListener("mouseenter", function () {
-  let scrollingHorizontally = true;
-
-  function toggle() {
-    scrollingHorizontally = !scrollingHorizontally;
-  }
-
-  postScroll.addEventListener("wheel", (event) => {
-    if (scrollingHorizontally) {
-      postScroll.scrollBy({
-        left: event.deltaY < 0 ? -30 : 30,
-      });
-
-      event.preventDefault();
-
-      // check if the user has reached the end of the slider
-      if (
-        Math.round(postScroll.scrollLeft) >=
-        postScroll.scrollWidth - postScroll.clientWidth
-      ) {
-        toggle();
-        postScroll.style.overflowY = "auto";
-      }
-
-      if (postScroll.scrollLeft === 0) {
-        toggle();
-        postScroll.style.overflowY = "auto";
-      }
-    } else {
-      return true;
-    }
-  });
-});
-
-postScroll.addEventListener("mouseout", function () {
-  let scrollingHorizontally = false;
-});
-
 /**
  * Renderer
  */

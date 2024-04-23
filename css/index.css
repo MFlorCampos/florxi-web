@@ -29,19 +29,6 @@
   display: block;
 }
 
-.container-scroll {
-  height: 550px;
-  overflow-x: scroll;
-}
-
-.container-scroll::-webkit-scrollbar {
-  background: #000 transparent;
-}
-
-.container-scroll {
-  scrollbar-color: #000 transparent;
-}
-
 .contact {
   display: flex;
   justify-content: space-between;
@@ -129,70 +116,111 @@ h2 {
   margin-bottom: 100px;
 }
 
-.work-experience {
-  white-space: nowrap;
-  width: auto;
-}
 
 .work-experience .card {
   display: inline-flex;
   width: 1024px;
 }
 .work-experience .container-empty {
-  width: 50%;
+  width: 100%;
 }
-.work-experience__carousel {
-  width: 50%;
+.work-experience__right {
+  width: 100%;
   position: relative;
+  margin-top: 3em;
 }
-.work-experience__carousel::before {
+.work-experience__right::before {
   content: "";
   position: absolute;
   border-bottom: 1px solid #151514;
   height: 1rem;
-  width: 57rem;
+  width: 90rem;
   background-repeat: no-repeat;
-  bottom: -1.3em;
+  bottom: 0;
   left: -18em;
 }
-.work-experience__carousel::after {
+.work-experience__right::after {
   content: "";
   position: absolute;
   background-image: url(../images/icons/sparkler-border.svg);
   height: 80px;
   width: 85px;
   background-repeat: no-repeat;
-  bottom: -2.5em;
+  bottom: -1.2em;
   right: 2.2em;
 }
-.work-experience__carousel--title {
+
+.work-experience__left {
+  width: 100%;
+  position: relative;
+  margin-top: 3em;
+  display: grid;
+  justify-content: end;
+}
+
+.work-experience__left::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #151514;
+  height: 1rem;
+  width: 90rem;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: -18em;
+}
+
+.work-experience__left::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/sparkler-border.svg);
+  height: 80px;
+  width: 85px;
+  background-repeat: no-repeat;
+  bottom: -1.2em;
+  left: 2.2em;
+}
+
+.work-experience__left--date {
+  font-size: 0.5em;
+  font-family: "Monumental", sans-serif;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  text-align: start;
+}
+
+.work-experience__right--title {
   font-size: 0.8em;
   font-family: "Monumental", sans-serif;
 }
-.work-experience__carousel--company {
+.work-experience__right--company {
   -webkit-text-stroke: 1px #151514;
   color: transparent;
   font-size: 0.6em;
   font-family: "Monumental", sans-serif;
 }
-.work-experience__carousel--description {
+.work-experience__right--description {
   font-size: 0.6em;
   padding-bottom: 1em;
 }
-.work-experience__carousel--subtitle {
+.work-experience__right--subtitle {
   font-size: 0.7em;
 }
-.work-experience__carousel--list {
+.work-experience__right--list {
   padding-bottom: 1em;
 }
-.work-experience__carousel--list li {
+.work-experience__right--list span {
+  font-weight: 600;
+}
+
+.work-experience__right--list li {
   font-size: 0.6em;
 }
-.work-experience__carousel--date {
+.work-experience__right--date {
   font-size: 0.5em;
   font-family: "Monumental", sans-serif;
-  margin-bottom: -2em;
+  margin-bottom: 0;
   margin-top: 1.5em;
+  text-align: center;
 }
 
 .about {
@@ -354,17 +382,8 @@ body {
   .about {
     width: 100%;
   }
-  .work-experience .container-empty {
-    display: none;
-  }
-  .container-scroll {
-    height: auto;
-    overflow-x: unset;
-  }
-  .work-experience {
-    white-space: unset;
-  }
-  .work-experience__carousel {
+
+  .work-experience__right {
     width: 100%;
     position: relative;
   }
@@ -373,11 +392,17 @@ body {
     width: 100%;
     margin-bottom: 4em;
   }
-  .work-experience__carousel::before {
-    left: -21em;
+  .work-experience__right::before {
+    left: -36.2em;
   }
-  .work-experience__carousel::after {
-    right: -0.8em;
+  .work-experience__right::after {
+    right: -1.8em;
+  }
+  .work-experience__left::before {
+    right: 0.6em;
+  }
+  .work-experience__left::after {
+    left: 8.7em;
   }
   .contact .card {
     padding: 1em 0;
