@@ -116,16 +116,23 @@ h2 {
   margin-bottom: 100px;
 }
 
-
 .work-experience .card {
   display: inline-flex;
-  width: 1024px;
-}
-.work-experience .container-empty {
   width: 100%;
+}
+.work-experience .container-date--left {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+.work-experience .container-date--right {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .work-experience__right {
-  width: 100%;
+  width: 60%;
   position: relative;
   margin-top: 3em;
 }
@@ -134,7 +141,7 @@ h2 {
   position: absolute;
   border-bottom: 1px solid #151514;
   height: 1rem;
-  width: 90rem;
+  width: 94rem;
   background-repeat: no-repeat;
   bottom: 0;
   left: -18em;
@@ -147,11 +154,11 @@ h2 {
   width: 85px;
   background-repeat: no-repeat;
   bottom: -1.2em;
-  right: 2.2em;
+  right: -12.3em;
 }
 
 .work-experience__left {
-  width: 100%;
+  width: 60%;
   position: relative;
   margin-top: 3em;
   display: grid;
@@ -163,10 +170,10 @@ h2 {
   position: absolute;
   border-bottom: 1px solid #151514;
   height: 1rem;
-  width: 90rem;
+  width: 74rem;
   background-repeat: no-repeat;
   bottom: 0;
-  right: -18em;
+  right: -6.5em;
 }
 
 .work-experience__left::after {
@@ -177,7 +184,7 @@ h2 {
   width: 85px;
   background-repeat: no-repeat;
   bottom: -1.2em;
-  left: 2.2em;
+  left: -13.4em;
 }
 
 .work-experience__left--date {
@@ -196,6 +203,7 @@ h2 {
   -webkit-text-stroke: 1px #151514;
   color: transparent;
   font-size: 0.6em;
+  padding-bottom: 1em;
   font-family: "Monumental", sans-serif;
 }
 .work-experience__right--description {
@@ -203,13 +211,15 @@ h2 {
   padding-bottom: 1em;
 }
 .work-experience__right--subtitle {
-  font-size: 0.7em;
+  font-weight: bold;
+  font-size: 0.6em;
 }
 .work-experience__right--list {
   padding-bottom: 1em;
 }
 .work-experience__right--list span {
-  font-weight: 600;
+  font-weight: bold;
+  font-family: monospace;
 }
 
 .work-experience__right--list li {
@@ -382,7 +392,16 @@ body {
   .about {
     width: 100%;
   }
-
+  .work-experience .container-date--left {
+    width: 100%;
+  }
+  .work-experience .container-date--right {
+    width: 100%;
+  }
+  .work-experience__left {
+    width: 100%;
+    position: relative;
+  }
   .work-experience__right {
     width: 100%;
     position: relative;
@@ -390,19 +409,32 @@ body {
   .work-experience .card {
     display: block;
     width: 100%;
+  }
+  .work-experience .card-reverse {
+    display: flex;
+    width: 100%;
     margin-bottom: 4em;
+    flex-direction: column-reverse;
+  }
+  .work-experience .container-date--right {
+    justify-content: flex-end;
   }
   .work-experience__right::before {
-    left: -36.2em;
+    left: -39.6em;
+    bottom: -1.5em;
   }
   .work-experience__right::after {
-    right: -1.8em;
+    right: 0;
+    bottom: -2.7em;
   }
   .work-experience__left::before {
-    right: 0.6em;
+    right: -1.5em;
+    bottom: -1.5em;
+    width: 9.4em;
   }
   .work-experience__left::after {
-    left: 8.7em;
+    left: 0;
+    bottom: -2.7em;
   }
   .contact .card {
     padding: 1em 0;
